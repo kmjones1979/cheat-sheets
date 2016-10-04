@@ -1,5 +1,7 @@
 # NGINX Performance Testing
 
+#### CPU, Memory and process related 
+
 Display CPU and process metrics - Enable multi CPU by loading top hit "1" then "W" to save configuration first
 
 `top -n 1 -b`
@@ -29,14 +31,14 @@ Print a list of TCP connections each second
 
 Display packets, errors, drop and states per interface
 
-`netstat -i 1'`
+`netstat -i 1`
 
 Various network counters, it make sense to collect each 5 or 10 minutes
 
 `netstat -st`
 
 
-### Disk I/O output
+### Disk I/O related
 
 Disk I/O dmesg and /var/log/messages (RHEL) /var/log/syslog (debian/ubuntu)
 
