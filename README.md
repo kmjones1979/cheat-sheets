@@ -1,32 +1,38 @@
 # NGINX Performance Testing
 
 Display CPU and process metrics - Enable multi CPU by loading top hit "1" then "W" to save configuration first
-```
-top -n 1 -b
-```
+
+`top -n 1 -b`
 
 Display virtual memory stats for 30 intervals
+
 `vmstat -n 1 30`
 
 Additional memory stats
+
 `vmstat -a 1`
 
 
 #### Networking related
 
 Get a list of tcp connections and their states
+
 `netstat -ant`
 
 Get list of TCP sockets
+
 `ss -atn`
 
 Print a list of TCP connections each second
+
 `netstat -antc`
 
 Display packets, errors, drop and states per interface
+
 `netstat -i 1'`
 
 Various network counters, it make sense to collect each 5 or 10 minutes
+
 `netstat -st`
 
 
