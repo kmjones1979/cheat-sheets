@@ -21,13 +21,13 @@ Get a list of tcp connections and their states
 
 `netstat -ant`
 
-Get list of TCP sockets
-
-`ss -atn`
-
 Print a list of TCP connections each second
 
 `netstat -antc`
+
+Get list of TCP sockets
+
+`ss -atn`
 
 Display packets, errors, drop and states per interface
 
