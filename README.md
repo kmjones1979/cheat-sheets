@@ -44,6 +44,12 @@ Disk I/O dmesg and /var/log/messages (RHEL) /var/log/syslog (debian/ubuntu)
 
 `iostat 1`
 
+# sed
+
+Print stderr out to stdout and sed replace with new line (\n)
+
+`nginx -V 2>&1 | sed -e "s/ --/\n --/g"`
+
 
 # cURL
 
