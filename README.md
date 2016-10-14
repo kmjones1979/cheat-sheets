@@ -38,7 +38,7 @@ Various network counters, it make sense to collect each 5 or 10 minutes
 `netstat -st`
 
 
-### Disk I/O related
+#### Disk I/O related
 
 Disk I/O dmesg and /var/log/messages (RHEL) /var/log/syslog (debian/ubuntu)
 
@@ -53,7 +53,7 @@ Print stderr out to stdout and sed replace with new line (\n)
 
 # Linux
 
-### Disk space management
+#### Disk space management
 
  - List top 10 largest directories or files
 
@@ -69,7 +69,7 @@ du -a /var | sort -n -r | head -n 10
 
 # OpenSSL
 
-### Generate client server key, cert and ca certificates
+#### Generate client server key, cert and ca certificates
 
 ```
 openssl genrsa -des3 -out ca.key 4096
@@ -87,7 +87,7 @@ openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 
  - https://github.com/nginxinc/show-demos/tree/master/n-dockerui
 
 
-### Extract key and cert from pkcs12 bundle
+#### Extract key and cert from pkcs12 bundle
 
 ```
 openssl pkcs12 -in path.p12 -out newfile.crt.pem -clcerts -nokey
@@ -97,7 +97,7 @@ openssl pkcs12 -in path.p12 -out newfile.key.pem -nocerts -nodes
  - http://stackoverflow.com/questions/15144046/need-help-converting-p12-certificate-into-pem-using-openssl
 
 
-### Convert .crt to .pem
+#### Convert .crt to .pem
 
 ```
 openssl x509 -in mycert.crt -out mycert.pem -outform PEM
