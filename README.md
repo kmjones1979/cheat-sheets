@@ -51,6 +51,17 @@ Print stderr out to stdout and sed replace with new line (\n)
 `nginx -V 2>&1 | sed -e "s/ --/\n --/g"`
 
 
+# Linux
+
+### Disk space management
+
+ - List top 10 largest directories or files
+
+```
+du -a /var | sort -n -r | head -n 10
+```
+
+
 # cURL
 
  - https://curl.haxx.se/docs/manpage.html
